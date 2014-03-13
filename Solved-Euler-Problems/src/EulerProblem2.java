@@ -3,14 +3,16 @@ import java.util.ArrayList;
 //Miguel Dickson
 //3-13-2014
 //Find the sum of the even-valued Fibonnaci numbers of value less than highest_val (in this case 4,000,000)
+//Adjust 
 
 
 public class EulerProblem2 {
 
 	public static void main(String args[]){
 		
+		long highest_val = 4000000;
 		ArrayList<Long> Fibnumbers = new ArrayList<Long>();
-		Fibnumbers = calcFibNumbers(4000000);
+		Fibnumbers = calcFibNumbers(highest_val);
 		long result = 0;
 		result = addEvenFibs(Fibnumbers);
 		System.out.println(result);
